@@ -1,0 +1,3 @@
+[submodule "opendc"]
+	path = opendc
+	url = https://github.com/she-shank/opendc.git

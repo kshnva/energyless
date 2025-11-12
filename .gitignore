@@ -1,0 +1,19 @@
+# Ignore OpenDCExperimentRunner build/executable
+/OpenDCExperimentRunner/
+
+# Ignore Python virtual environment
+/myenv/
+
+# macOS system files
+.DS_Store
+
+# Byte-compiled Python files
+*.pyc
+__pycache__/
+
+# Logs
+*.log
+
+# Optional: temporary or backup files
+*.swp
+*~
