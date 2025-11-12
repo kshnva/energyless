@@ -17,3 +17,8 @@ __pycache__/
 # Optional: temporary or backup files
 *.swp
 *~
+
+# Gradle build folders
+**/build/
+
+output

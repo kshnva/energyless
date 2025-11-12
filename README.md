@@ -68,3 +68,27 @@ chmod +x build_opendc_runner.sh
 
 * **resources/**
   Contains reference repositories such as `footprinter` and `opendc-demos`.
+
+---
+
+## Other Resources
+
+* **Carbon emission tutorial:** - [Running Carbon Emission Experiments](https://atlarge-research.github.io/opendc/docs/tutorials/Carbon%20Emission/2.1%20Running/)
+
+* **Input artifacts and parameters:** - [OpenDC Input Documentation](https://atlarge-research.github.io/opendc/docs/category/input)
+  Checkout sections **Allocation Policy** and **Topology > Power Source**
+
+* **Output artifacts and parameters:** - [OpenDC Output Documentation](https://atlarge-research.github.io/opendc/docs/documentation/Output)
+
+* **Relevant code locations:**
+
+  * **Allocation Policies:**
+    `opendc-experiments/opendc-experiments-base/src/main/kotlin/org/opendc/experiments/base/experiment/specs/allocation/AllocationPolicySpec.kt`
+  * **Prefab Schedulers mapping:**
+    `opendc-compute/opendc-compute-simulator/src/main/kotlin/org/opendc/compute/simulator/scheduler/ComputeSchedulers.kt`
+  * **Parsing and processing experiment JSON:**
+    `opendc-experiments/opendc-experiments-base/src/main/kotlin/org/opendc/experiments/base/experiment/`
+  * **Executing experiment JSON:**
+    `opendc-experiments/opendc-experiments-base/src/main/kotlin/org/opendc/experiments/base/runner/`
+
+
