@@ -10,7 +10,7 @@
   ],
   "workloads": [
     {
-      "pathToFile": "input/workload_traces/surf_week",
+      "pathToFile": "input/workflow_traces/sample",
       "type": "ComputeWorkload"
     }
   ],
