@@ -1,3 +1,6 @@
 [submodule "opendc"]
 	path = opendc
 	url = https://github.com/she-shank/opendc.git
+[submodule "opendc-traces"]
+	path = opendc-traces
+	url = https://github.com/Miautawn/opendc-traces.git

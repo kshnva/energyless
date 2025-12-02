@@ -22,3 +22,6 @@ __pycache__/
 **/build/
 
 output
+
+# ignore input synthetic traces as these should be re-generated as needed
+input/synthetic_traces
