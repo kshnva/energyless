@@ -10,14 +10,14 @@
   ],
   "workloads": [
     {
-      "pathToFile": "input/workflow_traces/surf_week",
+      "pathToFile": "input/synthetic_traces/highly_dependent_length500",
       "type": "ComputeWorkload"
     }
   ],
   "allocationPolicies": [
     {
       "type": "prefab",
-      "policyName": "CarbonAware"
+      "policyName": "CarbonAwareWorkflow"
     }
   ],
   "exportModels": [
