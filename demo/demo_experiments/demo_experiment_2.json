@@ -1,0 +1,31 @@
+{
+  "name": "demo_experiment",
+  "topologies": [
+    {
+      "pathToFile": "demo_topologies/demo_topology_2.json"
+    }
+  ],
+  "workloads": [
+    {
+      "pathToFile": "demo_workloads/demo_2",
+      "type": "ComputeWorkload"
+    }
+  ],
+   "allocationPolicies": [
+    {
+      "type": "prefab",
+      "policyName": "Random"
+    },
+    {
+      "type": "prefab",
+      "policyName": "WorkflowAware"
+    }
+  ],
+  "exportModels": [
+    {
+      "exportInterval": 10,
+      "printFrequency": 24,
+      "filesToExport": ["host", "powerSource", "service", "task"]
+    }
+  ]
+}

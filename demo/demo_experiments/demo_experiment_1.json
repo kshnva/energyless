@@ -1,0 +1,31 @@
+{
+  "name": "demo_experiment",
+  "topologies": [
+    {
+      "pathToFile": "demo_topologies/demo_topology_1.json"
+    }
+  ],
+  "workloads": [
+    {
+      "pathToFile": "../input/synthetic_traces/random_dag_n10_edge_prob0.25_seed0_deadline_default",
+      "type": "ComputeWorkload"
+    }
+  ],
+   "allocationPolicies": [
+    {
+      "type": "prefab",
+      "policyName": "Random"
+    },
+    {
+      "type": "prefab",
+      "policyName": "WorkflowAware"
+    }
+  ],
+  "exportModels": [
+    {
+      "exportInterval": 60,
+      "printFrequency": 24,
+      "filesToExport": ["host", "powerSource", "service", "task"]
+    }
+  ]
+}
