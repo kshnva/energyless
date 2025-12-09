@@ -1,0 +1,56 @@
+{
+  "name": "carbon_aware_sweep_long_horizon",
+  "topologies": [
+    {
+      "pathToFile": "input/topologies/sample_NL_small.json"
+    }
+  ],
+  "workloads": [
+    {
+      "pathToFile": "input/synthetic_traces/carbon_test_long_n120_edge_prob0.3_seed1_deadline_default",
+      "type": "ComputeWorkload"
+    }
+  ],
+  "allocationPolicies": [
+    {
+      "type": "carbonAware",
+      "filters": [
+        {
+          "type": "Compute"
+        },
+        {
+          "type": "VCpu",
+          "allocationRatio": 1.0
+        },
+        {
+          "type": "Ram",
+          "allocationRatio": 1.0
+        }
+      ],
+      "weighers": [
+        {
+          "type": "Ram",
+          "multiplier": 1.0
+        }
+      ],
+      "subsetSize": 1,
+      "carbonDelayThreshold": 0.15,
+      "maxDelayHours": 10,
+      "forecastHorizon": 72,
+      "slackThresholdMultiplier": 2.0,
+      "prioritizeCriticalPath": true
+    }
+  ],
+  "exportModels": [
+    {
+      "exportInterval": 3600,
+      "printFrequency": 24,
+      "filesToExport": [
+        "host",
+        "powerSource",
+        "service",
+        "task"
+      ]
+    }
+  ]
+}

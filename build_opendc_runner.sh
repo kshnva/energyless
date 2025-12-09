@@ -9,10 +9,9 @@ cd opendc
 
 cd opendc-experiments/opendc-experiments-base/build/distributions
 
-mv OpenDCExperimentRunner.zip ../../../../..
-cd ../../../../..
+# Extract the tar file directly to the project root
+tar -xf OpenDCExperimentRunner.tar -C ../../../../..
 
-unzip -o OpenDCExperimentRunner.zip
-rm OpenDCExperimentRunner.zip
+cd ../../../../..
 
 echo "OpenDCExperimentRunner built and extracted successfully."
