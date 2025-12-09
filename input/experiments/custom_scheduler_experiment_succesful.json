@@ -10,7 +10,7 @@
   ],
   "workloads": [
     {
-      "pathToFile": "input/synthetic_workflow_traces/mostly_parallel_n12",
+      "pathToFile": "input/synthetic_workflow_traces/real_world_montage_n200",
       "type": "ComputeWorkload"
     }
   ],

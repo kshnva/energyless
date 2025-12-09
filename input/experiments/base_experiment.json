@@ -1,5 +1,5 @@
 {
-  "name": "custom_scheduler_experiment",
+  "name": "base_experiment",
   "topologies": [
     {
       "pathToFile": "input/topologies/sample_NL.json"
@@ -17,7 +17,7 @@
   "allocationPolicies": [
     {
       "type": "prefab",
-      "policyName": "CarbonAwareWorkflow"
+      "policyName": "Timeshift"
     }
   ],
   "exportModels": [

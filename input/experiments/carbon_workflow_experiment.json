@@ -1,5 +1,5 @@
 {
-  "name": "custom_scheduler_experiment",
+  "name": "carbon_workflow_experiment",
   "topologies": [
     {
       "pathToFile": "input/topologies/sample_NL.json"
