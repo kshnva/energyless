@@ -3,14 +3,11 @@
   "topologies": [
     {
       "pathToFile": "input/topologies/sample_NL.json"
-    },
-    {
-      "pathToFile": "input/topologies/sample_BE.json"
     }
   ],
   "workloads": [
     {
-      "pathToFile": "input/synthetic_traces/balanced_tree_depth4_branching5_deadline_default",
+      "pathToFile": "input/synthetic_traces/balanced_tree_depth2_branching2_deadline_default",
       "type": "ComputeWorkload"
     }
   ],
@@ -28,14 +25,10 @@
           "multiplier": 1.0
         }
       ],
-      "enableDeadlineScore": true,
+      "taskDeadlineScore": false,
       "weightUrgency": 0.2,
       "weightCriticalDependencyChain": 0.2,
-      "enableParallelismScore": true,
-      "weightParallelism": 0.2,
-      "parallelismDecayRate": 0.15,
-      "subsetSize": 1,
-      "taskLookaheadThreshold": 1000
+      "subsetSize": 1
     }
   ],
   "exportModels": [
