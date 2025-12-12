@@ -17,6 +17,14 @@
       "filters": [
         {
           "type": "Compute"
+        },
+        {
+          "type": "VCpu",
+          "allocationRatio": 1.0
+        },
+        {
+          "type": "Ram",
+          "allocationRatio": 1.0
         }
       ],
       "weighers": [
@@ -25,10 +33,14 @@
           "multiplier": 1.0
         }
       ],
-      "taskDeadlineScore": false,
-      "weightUrgency": 0.2,
-      "weightCriticalDependencyChain": 0.2,
-      "subsetSize": 1
+      "enableDeadlineScore": true,
+      "enableParallelismScore": true,
+      "subsetSize": 1,
+      "taskLookaheadThreshold" : 1000,
+      "weightUrgency": 25,
+      "weightCriticalDependencyChain": 0,
+      "weightParallelism": 0,
+      "parallelismDecayRate": 15
     }
   ],
   "exportModels": [
