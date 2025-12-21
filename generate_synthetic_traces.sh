@@ -1,9 +1,9 @@
 #! /bin/bash
 
-cd /home/energyless/opendc-traces/workload
+cd opendc-traces/workload
 # Use python from current environment (pyenv/virtualenv aware)
 python generate_synthetic_workflow_examples.py
-cd /home/energyless
+cd ..
 
 rm -rf input/synthetic_traces
 
