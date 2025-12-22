@@ -1,5 +1,7 @@
 # WorkflowAware Scheduler Demo
 
+(OUTDATED: PLEASE READ [SETUP_GUIDE](../SETUP_GUIDE.md) for running actual experiments)
+
 The files in this directory display the properties of our coded "WorkflowAware" scheduler.
 You can run any of the demo notebooks:
 
